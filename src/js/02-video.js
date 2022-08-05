@@ -21,7 +21,7 @@ const onPlay = function(data) {
 };
 
     // -----------------------------------------------
-    player.setCurrentTime(500).then(function(seconds) {
+    player.setCurrentTime(saveCurrentTime).then(function(seconds) {
     // seconds = the actual time that the player seeked to
 }).catch(function(error) {
     switch (error.name) {
